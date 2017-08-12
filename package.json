@@ -1,0 +1,35 @@
+{
+  "name": "React-Node-Google-Search",
+  "version": "1.0.0",
+  "description": "node",
+  "main": "index.js",
+  "scripts": {
+    "install:all": "npm run install:server && npm run install:client",
+    "install:server": "npm install",
+    "install:client": "cd client && npm install",
+    "start": "npm-run-all --parallel start:*",
+    "nodemon": "nodemon index.js",
+    "start:server": "node index.js",
+    "start:client": "cd client && npm run start",
+    "test": "npm run test:unit",
+    "test:unit": "./node_modules/mocha/bin/mocha"
+  },
+  "author": "extwiii",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "chai": "^4.0.2",
+    "chai-http": "^3.0.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.2",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "mocha": "^3.4.2",
+    "nodemon": "^1.11.0",
+    "npm-run-all": "^4.0.2"
+  }
+}
